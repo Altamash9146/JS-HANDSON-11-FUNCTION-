@@ -13,14 +13,33 @@
     <hr>
 
     <div>Q1.Create one function with zero parameter having a console statement;</div>
+    <div>Answer →<pre>
+        → const Q1 = function (){
+            let x ='Answer to Q1'
+            console.log(x)
+        }()
+    </pre></div>
     <div id="zero">→ value printed in console At line no.5</div>
     <hr>
 
     <div>Q2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</div>
+    <div>Answer → <pre>
+         const add = function (a,b){
+            return a+b
+        }
+        console.log(5+7)
+
+    </pre></div>
     <div id="zero">→ value printed in console At line no.14</div>
     <hr>
 
     <div>Q3. Create one arrow function</div>
+    <div>Answer →<pre>
+        → const Multi = (a,b) => a*b;
+                const result = Multi(12,5);
+            console.log(result);
+
+    </pre></div>
     <div id="zero">→ value printed in console At line no.19</div>
     <hr>
 
@@ -70,9 +89,8 @@
     console.log(x);
     };"
     </pre></div>
-    <div><span id="output">→[Output:21,20,40].</span><span id="zero">value printed in console At line no.32,47 and 52</span></div>
-    <div>Reason: In the M.A execution context the x value printed as 21, then in the a function where the x was 
-        declared 20 before console.log(x) so the after execution of function scope the value of x which was 20 
+    <div><span id="output">→[Output:20,40].</span><span id="zero">value printed in console At line no.47 and 52</span></div>
+    <div>Reason: In the M.A  the x value printed as 21, then in the a function where the x was declared 20 before console.log(x) so, the after execution of function scope the value of x which was 20, 
         and it was near so it printed x = 20. Same with the case of 40.
     </div>
     <hr>
