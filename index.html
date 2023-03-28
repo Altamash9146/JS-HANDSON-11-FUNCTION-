@@ -88,10 +88,76 @@
       <div id="zero">→ value printed in console At line no.62 i.e 720</div>
     <hr>
 
+    <h1> *DAY 2* </h1>
+    <hr>
 
+    <div>Q1."Guess the Output
 
+        <pre>function FindSum(a, b){
+            return a + b;
+        }
+        
+        function DisplayData(data, batch){
+            console.log(`i am from ${data} and My batch is EA${batch}`)
+        }
+        
+        DisplayData(""PrepBytes"", FindSum(10, 9));"</pre></div>
+       
+    <div><span id="output">→ i am from PrepBytes and my batch is EA19</span></div>
 
+<hr>
 
+<div>Q2.<pre>
+    "Guess the output
+
+    Abc();
+    const Abc = function(){
+    let value = 20;
+    console.log(value);
+    }"
+</pre></div>
+<div><span id="output">→[Output:Referance Error].</span>
+    <div id="zero">→ value printed in console At line no 72.(it is commited in js that's why output will not be showned)</div>
+    <div> →Reason: In function Execution Context the variable is declared
+inside a function, and function is called before that's why it will show Referance Error.</div></div>
+<hr>
+
+<div>Q3.<pre>
+    "Guess the output
+
+var a = 10;
+(function (){
+    console.log(a);
+    var a = 20;
+})();"
+</pre></div>
+
+<div><span id="output">→It Will be Undefined</span>
+    <div id="zero">→ value printed in console At line no.87</div>
+    <div>→Reason: Before declaration in memory allocation
+    the a value wants to be printed.
+</div></div>
+<hr>
+
+<div>Q4.<pre>
+    "Guess the Output
+const greet =  function(name){
+    return function(m){
+    
+        console.log(`Hi!! ${name}, ${m}`);
+    }
+}
+  
+const greet_message = greet('EA19');
+greet_message(""Welcome To PrepBytes"")"
+</pre></div>
+
+<div><span id="output">→ The output will be "Hi!! EA19 Welcome to PrepBytes"</span>
+    <div id="zero">→ value printed in console At line no.95</div>
+    <div>→Reason In memory allocation
+    function will be skipped, it will directly to come const greet_message, in this the greet is assigned with argument
+    EA19, which will make connection to greet variable in const, and name will be printed as EA19. Same goes to function of m.
+</div></div>
 
 
 
