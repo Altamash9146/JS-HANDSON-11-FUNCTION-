@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HANDSON 11</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <h1> *JS Q&A Function*</h1>
+    <hr>
+
+    <div>Q1.Create one function with zero parameter having a console statement;</div>
+    <div id="zero">→ value printed in console At line no.5</div>
+    <hr>
+
+    <div>Q2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</div>
+    <div id="zero">→ value printed in console At line no.14</div>
+    <hr>
+
+    <div>Q3. Create one arrow function</div>
+    <div id="zero">→ value printed in console At line no.19</div>
+    <hr>
+
+    <div>Q4."Print output: 
+       <pre> var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();"</pre></div>
+    <div><span id="output">→ [Output:Undefined].</span><span id="zero">value printed in console At line no.24</span></div>
+    <div>
+        Reason: The output value is Undefined because when the execution context was running ,before it could 
+        assign value to x, the x was called(console.log x). 
+    
+    <hr>
+
+    <div>Q5. "Print output: 
+        <pre>var x = 21;
+        girl ();
+        console.log(x)
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };"</pre></div>
+    <div>→<span id="output">[Output:21].</span><span id="zero"> value printed in console At line no.32</span><div>
+        Reason: In the process of process of memory allocation the function was skipped after var x = 21, and then
+        there was console.log(x), So the execution context took the first declared value of x and printed in the output.
+    </div></div>
+    <hr>
+
+    <div>Q6. "Print output
+        <pre>
+       
+    var x = 21;
+    a();
+    b();
+
+    function a() {
+    
+    x = 20;
+    console.log(x);
+    };
+    function b() {
+    
+        x = 40;
+    console.log(x);
+    };"
+    </pre></div>
+    <div><span id="output">→[Output:21,20,40].</span><span id="zero">value printed in console At line no.32,47 and 52</span></div>
+    <div>Reason: In the M.A execution context the x value printed as 21, then in the a function where the x was 
+        declared 20 before console.log(x) so the after execution of function scope the value of x which was 20 
+        and it was near so it printed x = 20. Same with the case of 40.
+    </div>
+    <hr>
+
+
+    <div>Q7.Write a function that accepts parameter n and returns factorial of n</div>
+    <div><pre>function factorial(n) {
+        if (n === 0) return 1;
+        return n * factorial(n - 1);
+      }
+        let num = 6;
+      console.log(factorial(num))</pre></div>
+      <div id="zero">→ value printed in console At line no.62 i.e 720</div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
